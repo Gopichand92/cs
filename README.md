@@ -24,3 +24,29 @@ output: Enter the number 33
        Positive Number
        Odd    
 -----------------------------------------------------------------------------------------------       
+pin=int(input("enter your 4-digit pin number"))
+spin=1234
+balance=5000
+if pin==spin:
+    print("Access Granted!!")
+    withdraw=int(input("enter amount:"))
+    if withdraw>balance:
+        print("insufficient funds!!!")
+    else:
+        print("Amount withdraw:",withdraw)
+        print("Remaining balance:",balance-withdraw)
+        print("Thank You for banking with ICICI......")
+else:
+    print("Access denied......Wrong pin")
+OUTPUT:
+enter your 4-digit pin number 1234
+Access Granted!!
+enter amount: 4000
+Amount withdraw: 4000
+Remaining balance: 1000
+Thank You for banking with ICICI......
+OUTPUT:
+enter your 4-digit pin number 1432
+Access denied......Wrong pin
+-----------------------------------------------------------------------------------------------------
+       
